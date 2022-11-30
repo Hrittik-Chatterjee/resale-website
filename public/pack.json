@@ -1,0 +1,99 @@
+
+{
+    "id": 1,
+    "name": "Rolex",
+    "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+    "products": [
+        {
+            "modelName":"Yacht-Master",
+            "details": "Rolex Released  Yatch-master in 1939 when ww-2 was about to start .It was then fashion icon among the men.But only few had the ability to afford it for it's expensive price and limited number of pieces.",
+            "img": "",
+            "resalePrice":"20,000",
+            "originalPrice":"45,000",
+            "location":"Haiti",
+            "yearsOfUse":"2 years",
+            "seller":"Esha zaman",
+            "postedTime":""
+
+        },
+        {
+            "modelName":"Submariner",
+            "details": "Rolex released Submariner in 1989. 90s decade was the peak decade for Rolex and the most credit for its success goes to Submariner watch series.This is a water resistance watch.The water wont go inside it until you reach 300 feet under the water .No watch can go so deep under water and still be water resistant ",
+            "img": "",
+            "resalePrice":"18,000",
+            "originalPrice":"27,000",
+            "location":"Somalia",
+            "yearsOfUse":"3 years",
+            "seller":"Siddika Nafisa",
+            "postedTime":""
+
+        }
+       
+    ]
+    }
+    
+    {
+        "id": 2,
+        "name": "Patek Philippe",
+        "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+        "products": [
+            {
+                "modelName":"Moonlit bluster",
+                "details": "Patek Philippe is one of the iconic Watch brand in the world. No one can beat patek philippe in design .Moonlit bluster is the first watch to weared in moon.It was speacially designed to wear it in the space .What An iconic watch it is ",
+                "img": "",
+                "resalePrice":"19,000",
+                "originalPrice":"34,000",
+                "location":"Feni",
+                "yearsOfUse":"4 years",
+                "seller":"Rameesha Anjum",
+                "postedTime":""
+    
+            },
+            {
+                "modelName":"Sairom 430",
+                "details": "",
+
+                "img": "Sairom 430 by Petek philippe was released in 1975.It has it's own design with unique shape. It is an limited edition watch .there is only 12 piece of Sairom 430. Those who collected Sairom 430 gave introduction to their artistic mind",
+                "resalePrice":"24,000",
+                "originalPrice":"56,000",
+                "location":"Chattagram",
+                "yearsOfUse":"5 years",
+                "seller":"Sneha Chowdhury",
+                "postedTime":""
+    
+            }
+           
+        ]
+        }
+    {
+        "id": 3,
+        "name": "Omega Watches",
+        "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+        "products": [
+            {
+                "modelName":"Wasion-vinda",
+                "details": "Wasion-vinda was released by Omega watches in 1998 .It is one of the most famous Watch in the world.It has it's own cult.It is a limited edition watch only 5 piece of them is available in the world",
+                "img": "",
+                "resalePrice":"34,000",
+                "originalPrice":"59,000",
+                "location":"Dhaka",
+                "yearsOfUse":"4 months",
+                "seller":"Lolita Soumya",
+                "postedTime":""
+    
+            },
+            {
+                "modelName":"kilochief",
+                "details": "Kilochief by Omega Watches was released by Omega watches in 1981 .It is specially designed for army personals.Later it was released for public use also.It has lots of varients but Kilochief-217 was the best among",
+                "img": "",
+                "resalePrice":"58,900",
+                "originalPrice":"98,000",
+                "location":"Sylhet",
+                "yearsOfUse":"3 years",
+                "seller":"Nabila anjum",
+                "postedTime":""
+    
+            }
+           
+        ]
+        }
