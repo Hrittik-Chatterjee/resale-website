@@ -1,8 +1,8 @@
 
-{
+[{
     "id": 1,
     "name": "Rolex",
-    "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+    "logo": "https://i.ibb.co/WVxJnxy/Screenshot-1.jpg",
     "products": [
         {
             "modelName":"Yacht-Master",
@@ -30,12 +30,12 @@
         }
        
     ]
-    }
+    },
     
     {
         "id": 2,
         "name": "Patek Philippe",
-        "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+        "logo": "https://i.ibb.co/h7LFHK2/Screenshot-2.jpg",
         "products": [
             {
                 "modelName":"Moonlit bluster",
@@ -64,11 +64,11 @@
             }
            
         ]
-        }
+        },
     {
         "id": 3,
         "name": "Omega Watches",
-        "logo": "https://live.staticflickr.com/65535/52413593240_e00326e727_o.png",
+        "logo": "https://i.ibb.co/M6j53vV/omlogo.jpg",
         "products": [
             {
                 "modelName":"Wasion-vinda",
@@ -96,4 +96,4 @@
             }
            
         ]
-        }
+        }]
