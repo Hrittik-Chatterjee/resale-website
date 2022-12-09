@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 const SpecificWatchList = () => {
-    const { _id, title, products } = useLoaderData()
+    const { _id,  } = useLoaderData()
     // const { modelName,details,img,resalePrice,originalPrice,Location,yearsOfUse,seller,postedTime}=products
 
 
