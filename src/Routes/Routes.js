@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom"
 import Home from "../Componenets/Home"
-import Login from "../Componenets/Shared/Login"
+import Login from "../Componenets/Login"
+import SignUp from "../Componenets/SignUp"
 import SpecificWatchList from "../Componenets/SpecificWatchList/SpecificWatchList"
 import Main from "../Layout/Main"
 
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/signup',
+                element: <SignUp></SignUp>
             },
             {
                 path: '/watchComName/:id',
