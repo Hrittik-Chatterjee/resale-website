@@ -21,6 +21,7 @@ const Header = () => {
                         <li><Link to={'/watchComName/63890be46ece7a31c5913c5c'}>Rolex</Link></li>
                         <li><Link to={'/watchComName/63890be46ece7a31c5913c5d'}>Patek Philippe</Link></li>
                         <li><Link to={'/watchComName/63890be46ece7a31c5913c5e'}>Omega</Link></li>
+                        <li><Link to={'/blog'}>Blog</Link></li>
                     </ul>
                 </div>
                 <Link to={'/'} className="btn btn-ghost normal-case text-xl">Desired Watch</Link>
@@ -30,6 +31,7 @@ const Header = () => {
                     <li><Link to={'/watchComName/63890be46ece7a31c5913c5c'}>Rolex</Link></li>
                     <li><Link to={'/watchComName/63890be46ece7a31c5913c5d'}>Patek philippe</Link></li>
                     <li><Link to={'/watchComName/63890be46ece7a31c5913c5e'}>Omega</Link></li>
+                    <li><Link to={'/blog'}>Blog</Link></li>
                 </ul>
             </div>
             {

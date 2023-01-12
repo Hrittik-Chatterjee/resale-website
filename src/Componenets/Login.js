@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from './Context/AuthProvider';
 
 const Login = () => {
 
     const { register,formState:{errors}, handleSubmit } = useForm();
-    const {signIn}= useContext(AuthContext)
+    const {signIn, signInWithGoogle}= useContext(AuthContext)
+    const navigate = useNavigate()
+    const location =useLocation()
+    const from =location.state?.from?.pathname  || '/'
+   
    
 
     const handleLogin =data =>{
@@ -18,6 +22,28 @@ const Login = () => {
         })
         .catch(error => console.log(error))
     }
+
+    
+    const handleGoogleSignIn = () => {
+        console.log('clicked')
+    
+    
+        signInWithGoogle()
+          .then((result) => {
+    
+            const user = result.user;
+            console.log(user)
+            alert('Successfully Sign in with google')
+            navigate(from,{replace:true})
+            // ...
+          }).catch((error) => {
+            // Handle Errors here.
+    
+            const errorMessage = error.message;
+            console.log(errorMessage)
+    
+          });
+      }
     return (
         <div className='hero min-h-screen'>
             <div  className="hero-content flex-col lg:flex-row-reverse bg-stone-300 rounded-xl">
@@ -46,7 +72,7 @@ const Login = () => {
                     </form>
                     <p className='mx-auto'>New to Desired Watch? <Link className='text-secondary' to={'/signup'}>Sign Up </Link></p>
                     <div className='divider m-4'>OR</div>
-                    <button className='btn btn-outline m-4'>Continue With Google</button>
+                    <button onClick={handleGoogleSignIn} className='btn btn-outline m-4'>Continue With Google</button>
                 </div>
             </div>
         </div>
