@@ -6,7 +6,7 @@ import { AuthContext } from './Context/AuthProvider';
 const SignUp = () => {
 
     const { register,formState:{errors}, handleSubmit } = useForm();
-    const {createUser} = useContext(AuthContext)
+    const {createUser, signInWithGoogle} = useContext(AuthContext)
     const handleSignUp =(data) =>{
         console.log(data)
         createUser(data.email, data.password)
@@ -17,7 +17,25 @@ const SignUp = () => {
         .catch(error => console.log(error))
     }
     
-
+    const handleGoogleSignIn=()=>{
+        console.log('clicked')
+        
+    
+        signInWithGoogle()
+      .then((result) => {
+        
+        const user = result.user;
+        console.log(user)
+        alert('Successfully Sign in')
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        
+        const errorMessage = error.message;
+        console.log(errorMessage)
+       
+      });
+      }
     
     return (
         <div className='hero min-h-screen'>
@@ -54,7 +72,7 @@ const SignUp = () => {
                     </form>
                     <p className='mx-auto'>Already have an account? <Link className='text-secondary' to={'/login'}>Log in </Link></p>
                     <div className='divider m-4'>OR</div>
-                    <button className='btn btn-outline m-4'>Continue With Google</button>
+                    <button onClick={handleGoogleSignIn} className='btn btn-outline m-4'>Continue With Google</button>
                 </div>
             </div>
         </div>
