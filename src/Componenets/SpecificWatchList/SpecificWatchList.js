@@ -13,7 +13,7 @@ const SpecificWatchList = () => {
 
     const [productList, setproductList] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/watchComName/${_id}`)
+        fetch(`https://last-watch-server.vercel.app/watchComName/${_id}`)
             .then(res => res.json())
             .then(data => setproductList(data.products))
     })

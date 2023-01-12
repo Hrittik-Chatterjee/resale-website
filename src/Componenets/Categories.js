@@ -5,7 +5,7 @@ const Categories = () => {
 
     const [watchCompanyNames, setWatchCompanyNames] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/watchComName')
+        fetch('https://last-watch-server.vercel.app/watchComName')
             .then(res => res.json())
             .then(data => setWatchCompanyNames(data))
     })

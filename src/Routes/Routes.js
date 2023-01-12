@@ -41,7 +41,7 @@ export const router = createBrowserRouter([
             {
                 path: '/watchComName/:id',
                 element: <SpecificWatchList></SpecificWatchList>,
-                loader: ({ params }) => fetch(`http://localhost:5000/watchComName/${params.id}`)
+                loader: ({ params }) => fetch(`https://last-watch-server.vercel.app/watchComName/${params.id}`)
             },
         ]
     }
