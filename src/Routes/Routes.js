@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom"
+import About from "../Componenets/About"
 import Blog from "../Componenets/Blog"
 import Error from "../Componenets/Error"
 import Home from "../Componenets/Home"
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '/aboutus',
+                element: <About></About>
             },
             {
                 path: '/watchComName/:id',
